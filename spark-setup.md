@@ -13,7 +13,7 @@ The package spark-3.4.1-bin-hadoop3 is from [here](https://spark.apache.org/down
 
 2. Use ssh-keygen to prepare the ssh keys for password-less login, follow [this](https://www.ssh.com/academy/ssh/keygen), which is a pretty standward way for ssh. 
 
-3. Add the worker info in the conf/workers file. If you dont have the file, please create one. 
+3. Add the worker info in the conf/workers file. If you don't have the file, please create one. 
 
 4. My default JAVA is too old, so I downloaded a newer version and add the JAVA_HOME path in my conf/spark-env.sh file. The command looks like this: JAVA_HOME='/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home' 
 
@@ -32,4 +32,6 @@ spark = SparkSession \
         .getOrCreate()
 ```
 
-The ones from the official [pyspark connect](https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_connect.html) doesn't really work for me
+The ones from the official [pyspark connect](https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_connect.html) doesn't really work for me. The url is the ip address for your master machine and can be found either on the monitor page (localhost:8080) or your system preferences-sharing.
+
+Now the spark is ready to go! I connect the two machines on wifi at home, and can handle this dataset without trouble.
