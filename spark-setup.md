@@ -34,4 +34,10 @@ spark = SparkSession \
 
 The ones from the official [pyspark connect](https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_connect.html) doesn't really work for me. The url is the ip address for your master machine and can be found either on the monitor page (localhost:8080) or your system preferences-sharing.
 
+7. I also need to have an environment variable set up to avoid a forking error (see [here](https://medium.com/r/?url=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F50168647%2Fmultiprocessing-causes-python-to-crash-and-gives-an-error-may-have-been-in-progr)) by adding this line at the top to the notebook.
+
+```
+%set_env OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+```
+
 Now the spark is ready to go! I connect the two machines on wifi at home, and can handle this dataset without trouble.

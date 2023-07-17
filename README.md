@@ -16,7 +16,9 @@ This is the capstone project for Udacity Data Scientist Nanodegree. The purpose 
 ### Other Files
 1. EDA-2-pyspark-larger_dataset.ipynb: EDA notebook using 10% randomly selected user
 
-2. shap-analysis.ipynb: Use shap to do some feature importance analysis. 
+2. modeling-explore-full_dataset.ipynb: Explore models using the full dataset.
+
+3. shap-analysis.ipynb: Use shap to do some feature importance analysis. 
 
 ### Some Technical Notes
 1. Things related to spark is in spark-setup.md. I also tried to do the so-called pandas-on-spark, see test-spark2.ipynb. But there are too many unexpected outcomes so I essentially give up and stick with native spark-sql.
