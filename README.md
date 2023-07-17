@@ -1,7 +1,7 @@
 # Sparkify
 
 ### Purpose
-This is the capstone project for Udacity Data Scientist Nanodegree. The purpose is to predict whether a user will "churn" or not. "churn" here is defined as users that confirm cancellation. The dataset simulates a song streaming service and is about 12GB. 
+This is the capstone project for Udacity Data Scientist Nanodegree. The purpose is to predict whether a user will "churn" or not. "churn" here is defined as users that confirm cancellation. The dataset simulates a song streaming service and is about 12GB. The accompanying medium post is [here](https://medium.com/@mazhitu/sparkify-dataset-to-churn-or-not-bbe7dd868f80). 
 
 ### My Plan
 1. The dataset is too large to hold on one laptop. But I have two laptops at home so I set up a spark environment on these two machines to perform ETL task. The output is converted back to a pandas dataframe and is only ~15Mb. See spark-setup.md for details about how to set up a spark environment.
