@@ -34,6 +34,9 @@ This is the capstone project for Udacity Data Scientist Nanodegree. The purpose 
 ### Summaries of Results
 I finally obtain an f1-score of about 0.85 for Randomforest and Xgboost models. ~0.80-0.82 for logistic regression and svc. Stacking doesn't make it higher in this specific dataset. In terms of business insight, it seems it's better to do something with new users (with small max_ts, total_time), paid users (paid_level=1), users with more roll_advert, downgrade and thumbs down actions.
 
+### Acknowledgment
+I would like to thank the instructors (although i can't find their names…) that have put together this wonderful dataset and the instructions on using pyspark, which makes this project feasible.
+
 ### Libraries used 
 * python==3.9.7
 * seaborn==0.12.2
